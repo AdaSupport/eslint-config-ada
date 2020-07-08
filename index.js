@@ -43,6 +43,7 @@ module.exports = {
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-multiple-empty-lines": ["error", { "max": 2 }],
     "no-underscore-dangle": "error",
+    "no-unused-vars": "error",
     "no-use-before-define": "error",
     "operator-linebreak": ["error", "after", { "overrides": {
       "=": "none",
@@ -110,6 +111,7 @@ module.exports = {
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/indent": "off"
