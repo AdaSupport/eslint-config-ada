@@ -136,7 +136,14 @@ module.exports = {
           }
         ],
         "@typescript-eslint/no-use-before-define": "error",
-        "@typescript-eslint/type-annotation-spacing": "error"
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "camelcase": "off",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          { "selector": "variableLike", "format": ["camelCase", "PascalCase", "UPPER_CASE"] },
+          { "selector": "parameter", "format": ["camelCase", "PascalCase"] },
+          { "selector": "function", "format": ["camelCase", "PascalCase"] }
+        ]
       },
       "parser": "@typescript-eslint/parser"
     }
