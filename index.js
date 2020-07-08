@@ -18,7 +18,6 @@ module.exports = {
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".json", ".ts", ".d.ts", ".tsx", ".svg", ".scss"],
-        "moduleDirectory": ["node_modules", "source", "static"],
         "paths": ["."]
       }
     },
@@ -29,17 +28,20 @@ module.exports = {
   "parser": "babel-eslint",
   "rules": {
     "array-bracket-newline": ["error", "consistent"],
+    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+    "camelcase": ["error", { "properties": "never" }],
     "comma-dangle": ["error", "never"],
     "curly": ["error", "all"],
     "eqeqeq": ["error", "always"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
-    "max-lines": ["error", {"max": 1200, "skipBlankLines": true, "skipComments": true}],
+    "max-classes-per-file": ["warn", 1],
+    "max-lines": ["error", {"max": 1000, "skipBlankLines": true, "skipComments": true}],
     "max-params": ["error", 4],
     "no-alert": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "no-underscore-dangle": ["error", { "allow": ["_id", "_type", "_env", "__env"] }],
+    "no-underscore-dangle": "error",
     "no-use-before-define": "error",
     "operator-linebreak": ["error", "after", { "overrides": {
       "=": "none",
@@ -68,11 +70,11 @@ module.exports = {
           "**/*.spec.tsx",
           "**/*.test.js",
           "**/*.spec.js",
-          "webpack.config.js",
-          "webpack-docker.config.js"
+          "webpack.*.js",
         ]
       }
     ],
+    "import/extensions": ["error", "never", { "scss": "always", "svg": "always", "json": "always" }],
     "import/no-named-as-default": "off",
     "import/no-unresolved": ["error", { "caseSensitive": false }],
     "import/prefer-default-export": "off",
@@ -82,6 +84,12 @@ module.exports = {
     "react/jsx-curly-spacing": ["error", {"when": "never", "children": true}],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".tsx"] }],
     "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+
+    "react/no-deprecated": ["warn"],
+    "react/static-property-placement": ["warn", "static public field"],
+    "react/state-in-constructor": ["warn", "never"],
+
     "require-jsdoc": ["error", {
       "require": {
         "FunctionDeclaration": true,
@@ -97,7 +105,7 @@ module.exports = {
     "jsdoc/require-param-name": "error",
     "jsdoc/require-param-type": "error",
     "jsdoc/require-returns-type": "error",
-    "jsdoc/valid-types": "error",
+    "jsdoc/valid-types": "warn",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
@@ -113,6 +121,7 @@ module.exports = {
         "no-use-before-define": "off",
         "require-jsdoc": "off",
         "jsdoc/require-param": "off",
+        "jsdoc/require-param-type": "off",
         "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": false }],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-var-requires": "error",
