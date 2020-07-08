@@ -41,6 +41,7 @@ module.exports = {
     "max-params": ["error", 4],
     "no-alert": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
     "no-underscore-dangle": "error",
     "no-use-before-define": "error",
     "operator-linebreak": ["error", "after", { "overrides": {
