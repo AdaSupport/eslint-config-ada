@@ -120,7 +120,9 @@ module.exports = {
     {
       "files": ["*.ts", "*.tsx"],
       "rules": {
+        "camelcase": "off",
         "no-undef": "off",
+        "no-unused-vars": "off",
         "no-use-before-define": "off",
         "require-jsdoc": "off",
         "jsdoc/require-param": "off",
@@ -139,7 +141,6 @@ module.exports = {
         ],
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/type-annotation-spacing": "error",
-        "camelcase": "off",
         "@typescript-eslint/naming-convention": [
           "error",
           { "selector": "variableLike", "format": ["camelCase", "PascalCase", "UPPER_CASE"] },
