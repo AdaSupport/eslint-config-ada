@@ -87,8 +87,8 @@ module.exports = {
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".tsx"] }],
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-props-no-spreading": "off",
-
     "react/no-deprecated": ["warn"],
+    "react/no-did-update-set-state": "off",
     "react/static-property-placement": ["warn", "static public field"],
     "react/state-in-constructor": ["warn", "never"],
 
