@@ -131,14 +131,6 @@ module.exports = {
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
-        "@typescript-eslint/explicit-function-return-type": [
-          "error",
-          {
-            "allowExpressions": true,
-            "allowHigherOrderFunctions": true,
-            "allowTypedFunctionExpressions": true
-          }
-        ],
         "@typescript-eslint/no-use-before-define": "error",
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/naming-convention": [
