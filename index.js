@@ -31,7 +31,7 @@ module.exports = {
     "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
     "camelcase": ["error", { "properties": "never" }],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["error", "only-multiline"],
     "curly": ["error", "all"],
     "eqeqeq": ["error", "always"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
@@ -45,6 +45,7 @@ module.exports = {
     "no-underscore-dangle": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
+    "no-restricted-syntax": "off",
     "operator-linebreak": ["error", "after", { "overrides": {
       "=": "none",
       "?": "before",
