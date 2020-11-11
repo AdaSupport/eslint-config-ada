@@ -31,7 +31,7 @@ module.exports = {
     "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
     "camelcase": ["error", { "properties": "never" }],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["warn", "always-multiline"],
     "curly": ["error", "all"],
     "eqeqeq": ["error", "always"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
