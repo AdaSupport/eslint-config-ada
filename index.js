@@ -131,6 +131,7 @@ module.exports = {
           "multiline": { "delimiter": "semi", "requireLast": true },
           "singleline": { "delimiter": "semi", "requireLast": false }
         }],
+        "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
         "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": false }],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-var-requires": "error",
