@@ -127,6 +127,10 @@ module.exports = {
         "require-jsdoc": "off",
         "jsdoc/require-param": "off",
         "jsdoc/require-param-type": "off",
+        "@typescript-eslint/member-delimiter-style": ["error", {
+          "multiline": { "delimiter": "semi", "requireLast": true },
+          "singleline": { "delimiter": "semi", "requireLast": false }
+        }],
         "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": false }],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-var-requires": "error",
