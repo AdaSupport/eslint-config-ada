@@ -31,7 +31,7 @@ module.exports = {
     "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
     "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
     "camelcase": ["error", { "properties": "never" }],
-    "comma-dangle": ["warn", "always-multiline"],
+    "comma-dangle": ["error", "always-multiline"],
     "curly": ["error", "all"],
     "eqeqeq": ["error", "always"],
     "indent": ["error", 2, { "SwitchCase": 1 }],
@@ -131,6 +131,7 @@ module.exports = {
           "multiline": { "delimiter": "semi", "requireLast": true },
           "singleline": { "delimiter": "semi", "requireLast": false }
         }],
+        "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
         "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": false }],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-var-requires": "error",
