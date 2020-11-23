@@ -59,6 +59,10 @@ module.exports = {
     "quotes": ["error", "double"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "sort-imports": ["warn", {
+      "ignoreDeclarationSort": true,
+      "ignoreMemberSort": false
+    }],
     "space-before-function-paren": ["error", {
       "anonymous": "never",
       "asyncArrow": "always",
