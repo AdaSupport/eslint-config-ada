@@ -59,6 +59,10 @@ module.exports = {
     "quotes": ["error", "double"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "sort-imports": ["warn", {
+      "ignoreDeclarationSort": true,
+      "ignoreMemberSort": false
+    }],
     "space-before-function-paren": ["error", {
       "anonymous": "never",
       "asyncArrow": "always",
@@ -79,6 +83,11 @@ module.exports = {
     "import/extensions": ["error", "never", { "scss": "always", "svg": "always", "json": "always" }],
     "import/no-named-as-default": "off",
     "import/no-unresolved": ["error", { "caseSensitive": false }],
+    "import/order": ["warn", {
+      "alphabetize": {"order": "asc"},
+      "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+      "newlines-between": "always"
+    }],
     "import/prefer-default-export": "off",
     "jsx-a11y/label-has-associated-control": ["error", {}],
     "jsx-a11y/no-access-key": "off",
