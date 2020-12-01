@@ -125,7 +125,6 @@ module.exports = {
         "no-undef": "off",
         "no-unused-vars": "off",
         "no-use-before-define": "off",
-        "require-jsdoc": "off",
         "jsdoc/require-param": "off",
         "jsdoc/require-param-type": "off",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
