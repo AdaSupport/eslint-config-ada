@@ -101,15 +101,7 @@ module.exports = {
     "react/static-property-placement": ["warn", "static public field"],
     "react/state-in-constructor": ["warn", "never"],
 
-    "require-jsdoc": ["error", {
-      "require": {
-        "FunctionDeclaration": true,
-        "MethodDefinition": true,
-        "ClassDeclaration": false,
-        "ArrowFunctionExpression": false,
-        "FunctionExpression": false
-      }
-    }],
+    "require-jsdoc": "off",
     "jsdoc/check-param-names": "error",
     "jsdoc/check-tag-names": "error",
     "jsdoc/require-param": "error",
@@ -133,9 +125,9 @@ module.exports = {
         "no-undef": "off",
         "no-unused-vars": "off",
         "no-use-before-define": "off",
-        "require-jsdoc": "off",
         "jsdoc/require-param": "off",
         "jsdoc/require-param-type": "off",
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/member-delimiter-style": ["error", {
           "multiline": { "delimiter": "semi", "requireLast": true },
           "singleline": { "delimiter": "semi", "requireLast": false }
