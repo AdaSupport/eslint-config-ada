@@ -81,6 +81,7 @@ module.exports = {
       }
     ],
     "import/extensions": ["error", "never", { "scss": "always", "svg": "always", "json": "always" }],
+    "import/no-default-export": "warn",
     "import/no-named-as-default": "off",
     "import/no-unresolved": ["error", { "caseSensitive": false }],
     "import/order": ["warn", {
