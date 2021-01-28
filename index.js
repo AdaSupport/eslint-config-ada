@@ -123,6 +123,7 @@ module.exports = {
       "files": ["*.ts", "*.tsx"],
       "rules": {
         "camelcase": "off",
+        "no-shadow": "off",
         "no-undef": "off",
         "no-unused-vars": "off",
         "no-use-before-define": "off",
@@ -135,6 +136,7 @@ module.exports = {
         }],
         "@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": true }],
         "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": false }],
+        "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
