@@ -1,6 +1,6 @@
 module.exports = {
   "extends": ["airbnb", "plugin:@typescript-eslint/recommended"],
-  "plugins": ["jest", "react-hooks", "jsdoc", "@typescript-eslint"],
+  "plugins": ["jest", "react-hooks", "jsdoc", "@typescript-eslint", "object-pattern-newline"],
   "settings": {
     "jsdoc": {
       "exemptEmptyFunctions": true,
@@ -45,6 +45,10 @@ module.exports = {
     "no-underscore-dangle": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
+    "object-pattern-newline/enforce": ["warn", {
+      "items": 3,
+      "max-len": 100
+    }],
     "operator-linebreak": ["error", "after", { "overrides": {
       "=": "none",
       "?": "before",
