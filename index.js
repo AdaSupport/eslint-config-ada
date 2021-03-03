@@ -103,6 +103,7 @@ module.exports = {
     "react/jsx-props-no-spreading": "off",
     "react/no-deprecated": ["warn"],
     "react/no-did-update-set-state": "off",
+    "react/require-default-props": "off",
     "react/static-property-placement": ["warn", "static public field"],
     "react/state-in-constructor": ["warn", "never"],
 
