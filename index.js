@@ -1,6 +1,6 @@
 module.exports = {
   "extends": ["airbnb", "plugin:@typescript-eslint/recommended"],
-  "plugins": ["jest", "react-hooks", "jsdoc", "@typescript-eslint", "object-pattern-newline"],
+  "plugins": ["jest", "react-hooks", "@typescript-eslint", "object-pattern-newline"],
   "settings": {
     "jsdoc": {
       "exemptEmptyFunctions": true,
@@ -104,17 +104,11 @@ module.exports = {
     "react/no-deprecated": ["warn"],
     "react/no-did-update-set-state": "off",
     "react/require-default-props": "off",
+    "react/sort-comp": "off",
     "react/static-property-placement": ["warn", "static public field"],
-    "react/state-in-constructor": ["warn", "never"],
+    "react/state-in-constructor": "off",
 
     "require-jsdoc": "off",
-    "jsdoc/check-param-names": "error",
-    "jsdoc/check-tag-names": "error",
-    "jsdoc/require-param": "error",
-    "jsdoc/require-param-name": "error",
-    "jsdoc/require-param-type": "error",
-    "jsdoc/require-returns-type": "error",
-    "jsdoc/valid-types": "warn",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-member-accessibility": "off",
@@ -132,8 +126,6 @@ module.exports = {
         "no-undef": "off",
         "no-unused-vars": "off",
         "no-use-before-define": "off",
-        "jsdoc/require-param": "off",
-        "jsdoc/require-param-type": "off",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/member-delimiter-style": ["error", {
           "multiline": { "delimiter": "semi", "requireLast": true },
