@@ -41,7 +41,7 @@ module.exports = {
     "max-params": ["error", 4],
     "no-alert": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 0 }],
     "no-underscore-dangle": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
@@ -114,6 +114,7 @@ module.exports = {
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/indent": "off"
   },
