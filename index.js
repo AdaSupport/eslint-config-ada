@@ -41,7 +41,7 @@ module.exports = {
     "max-params": ["error", 4],
     "no-alert": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1, "maxBOF": 0 }],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0, "maxBOF": 0 }],
     "no-underscore-dangle": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
