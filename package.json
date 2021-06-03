@@ -1,6 +1,6 @@
 {
   "name": "@ada-support/eslint-config-ada",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "A standard ESLint config used across Ada projects",
   "main": "index.js",
   "repository": {
