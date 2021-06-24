@@ -42,6 +42,7 @@ module.exports = {
     "no-alert": "error",
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+    "no-param-reassign": ["error", { props: true, ignorePropertyModificationsFor: ["draftState"] }],
     "no-underscore-dangle": "error",
     "no-unused-vars": "error",
     "no-use-before-define": "error",
